@@ -725,6 +725,7 @@ ul.work li.active {
     margin-top: 30px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .work .item img {
