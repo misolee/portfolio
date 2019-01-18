@@ -266,6 +266,10 @@ fieldset {
     vertical-align: middle;
 }
 
+.header-text {
+    font-family: 'Comfortaa', cursive;
+}
+
 .header-text h2 {
     font-size: 20px;
     color: rgb(46, 46, 46);
@@ -388,17 +392,30 @@ strong.text-rotator span {
     transition: all 0.4s ease-out;
 }
 
+.logo-header {
+    width: 40%;
+}
+
 .logo {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    display: flex;
+}
+
+.logo img {
+    width: 10%;
+    height: 10%;
 }
 
 .logo a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 20px;
     letter-spacing: 4px;
+    font-family: 'Comfortaa', cursive;
+    align-self: center;
+    margin-left: 10px;
 }
 
 .mainmenu .navbar-nav li {
@@ -518,19 +535,26 @@ strong.text-rotator span {
 * ----------------------------------------------------------------------------------------
 */
 
+.about-me {
+    display: flex;
+    width: 70%;
+}
+
 .about-image {
+    flex: 1;
     background-image: url("../images/bg/about.jpeg");
     background-size: cover;
-    height: 309px;
-    width: 260px;
-    margin: 0 100px;
+    height: 260px;
+    margin-right: 50px;
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about-text {}
+.about-text {
+    flex: 2;
+}
 
 .about-text h2 {
     font-size: 30px;
@@ -570,20 +594,38 @@ strong.text-rotator span {
     color: rgb(46, 46, 46);
 }
 
-.about-right ul li {
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-section {
     width: 40%;
-    float: left;
-    margin-bottom: 25px;
+}
+
+.app-academy {
+    border-top: 1px dotted #ccc;
+}
+
+.about-right ul li {
     color: #333;
     border-bottom: 1px dotted #ccc;
     display: inline-block;
-    margin-right: 50px;
-    padding-bottom: 10px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .about-right ul li i{
     margin-right: 10px;
     color: rgb(241, 193, 193);
+    box-shadow: none;
 }
+
+.history-item {
+    display: flex;
+    align-items: center;
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 06.SERVICE CSS STYLE

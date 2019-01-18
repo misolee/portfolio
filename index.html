@@ -16,10 +16,12 @@
     <!-- ALL GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900" rel="stylesheet">
     <!-- FONT AWESOME CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- OWL CAROSEL CSS -->
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-    <!-- OWL CAROSEL CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
     <!-- MAGNIFIC CSS -->
@@ -41,7 +43,7 @@
         gtag('config', 'UA-132782398-1');
     </script>
     <!-- FAVICON -->
-    <link rel="icon" href="./assets/images/bg/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="./assets/images/bg/logo.png" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,9 +68,10 @@
         <div class="header-top-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-2">
+                    <div class="col-md-3 col-sm-2 logo-header">
                         <!-- START LOGO DESIGN AREA -->
                         <div class="logo">
+                            <img src="./assets/images/bg/logo.png" >
                             <a href="index.html">Miso Lee</a>
                         </div>
                         <!-- END LOGO DESIGN AREA -->
@@ -87,7 +90,9 @@
                                 </div>
                                 <div class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li class="active"><a class="smoth-scroll" href="#home"><span>Home</span> <div class="ripple-wrapper"></div></a>
+                                        <li class="active"><a class="smoth-scroll" href="#home"><span>Home</span>
+                                                <div class="ripple-wrapper"></div>
+                                            </a>
                                         </li>
                                         <li><a class="smoth-scroll" href="#about"><span>About</span></a>
                                         </li>
@@ -148,15 +153,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12 about-image">
-
-                </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 about-me">
                     <!-- START ABOUT TEXT AREA -->
+                    <div class="col-md-6 col-sm-12 about-image">
+
+                    </div>
                     <div class="about-text">
-                        <h2 class="wow fadeInDown" data-wow-delay="0.4s">I'm <strong>Miso Lee</strong> and I'm an inventive <strong>web developer</strong>.</h2>
-                        <p class="wow fadeInDown" data-wow-delay="0.6s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <a class="wow fadeInDown" data-wow-delay=".8s" target="_blank" href="./assets/resume.pdf">Download resume</a>
+                        <h2 class="wow fadeInDown" data-wow-delay="0.4s">I'm <strong>Miso Lee</strong> and I'm an
+                            innovative <strong>web developer</strong>.</h2>
+                        <p class="wow fadeInDown" data-wow-delay="0.6s">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                            make a type specimen book.</p>
+                        <a class="wow fadeInDown" data-wow-delay=".8s" target="_blank" href="./assets/resume.pdf">Download
+                            resume</a>
+                    </div>
+                    <!-- / END ABOUT TEXT AREA -->
+                </div>
+                <div class="col-md-6 col-sm-12 history-section">
+                    <!-- START ABOUT TEXT AREA -->
+                    <div class="about-right">
+                        <ul class="wow fadeInUp history" data-wow-delay="0.8s">
+                            <li class="app-academy"><div class="history-item"><i class="fa fa-angle-double-right"></i><div>App Academy</div></div><div>2018 - 2019</div></li>
+                            <li><div class="history-item"><i class="fa fa-angle-double-right"></i><div>University of California -- San Diego</div></div><div>June 2018</div></li>
+                        </ul>
                     </div>
                     <!-- / END ABOUT TEXT AREA -->
                 </div>
@@ -164,6 +184,54 @@
         </div>
     </section>
     <!-- / END ABOUT DESIGN AREA -->
+
+
+    <!-- START SERVICES DESIGN AREA -->
+    <section class="service-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2>Services</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.2s">
+                        <i class="fa fa-wordpress"></i>
+                        <h2>web development</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy</p>
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="fa fa-line-chart"></i>
+                        <h2>internet marketing</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy</p>
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+                <!-- START SINGLE SERVICE DESIGN AREA -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.6s">
+                        <i class="fa fa-volume-up"></i>
+                        <h2>Voice recording</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy</p>
+                    </div>
+                </div>
+                <!-- / END SINGLE SERVICE DESIGN AREA -->
+            </div>
+        </div>
+    </section>
+    <!-- / END SERVICES DESIGN AREA -->
 
     <!-- START WORK DESIGN AREA -->
     <section id="work" class="work section-padding">
@@ -282,6 +350,45 @@
     </section>
     <!-- / END START WORK DESIGN AREA -->
 
+
+    <!-- START COMPLETE PROJECT DESIGN AREA -->
+    <section class="complete-project-area" data-stellar-background-ratio="0.2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-project-complete">
+                        <i class="fa fa-handshake-o"></i>
+                        <h2 class="counter-num">352</h2>
+                        <h3>complete project</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-project-complete">
+                        <i class="fa fa-users"></i>
+                        <h2 class="counter-num">121</h2>
+                        <h3>Happy clients</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-project-complete">
+                        <i class="fa fa-coffee"></i>
+                        <h2 class="counter-num">560</h2>
+                        <h3>cup of coffie</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-project-complete">
+                        <i class="fa fa-child"></i>
+                        <h2 class="counter-num">11</h2>
+                        <h3>awards</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END COMPLETE PROJECT DESIGN AREA -->
+
+
     <!-- START TESTIMONIAL DESIGN AREA -->
     <section id="testimonial" class="testimonial-area section-padding">
         <div class="container">
@@ -292,7 +399,10 @@
                         <i class="fa fa-comments"></i>
                         <h2>Jessica malcova</h2>
                         <h3>CEO facebook</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.</p>
                     </div>
                     <!-- / END SINGLE TESTIMONIAL DESIGN AREA -->
                     <!-- START SINGLE TESTIMONIAL DESIGN AREA -->
@@ -300,7 +410,10 @@
                         <i class="fa fa-comments"></i>
                         <h2>Jessica malcova</h2>
                         <h3>CEO facebook</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.</p>
                     </div>
                     <!-- / END SINGLE TESTIMONIAL DESIGN AREA -->
                     <!-- START SINGLE TESTIMONIAL DESIGN AREA -->
@@ -308,7 +421,10 @@
                         <i class="fa fa-comments"></i>
                         <h2>Jessica malcova</h2>
                         <h3>CEO facebook</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy
+                            text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s.</p>
                     </div>
                     <!-- / END SINGLE TESTIMONIAL DESIGN AREA -->
                 </div>
@@ -335,23 +451,32 @@
                         <form method="post" action="https://formspree.io/misolee8191@gmail.com">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+                                    <input type="text" name="name" class="form-control" id="first-name" placeholder="Name"
+                                        required="required">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email"
+                                        required="required">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+                                    <textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message"
+                                        required="required"></textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="actions wow fadeInDown" data-wow-delay=".4s">
-                                        <input type="submit" value="submit now" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!">
+                                        <input type="submit" value="submit now" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg"
+                                            title="Submit Your Message!">
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <!-- / END CONTACT FORM DESIGN AREA -->
+                </div>
+                <div class="col-md-6">
+                    <!-- START GOOGLE MAP DESIGN AREA -->
+                    <!-- <div id="map"></div> -->
+                    <!-- / END GOOGLE MAP DESIGN AREA -->
                 </div>
             </div>
         </div>
@@ -387,10 +512,9 @@
                                 <li><a href="https://www.linkedin.com/in/miso-lee/"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="https://angel.co/miso-lee"><i class="fab fa-angellist"></i></a></li>
                                 <li><a href="https://www.instagram.com/_misolee/"><i class="fab fa-instagram"></i></a></li>
-
                             </ul>
                         </div>
-                        <p>Copyright MisoLee. All-Right Reserved</p>
+                        <p>Copyright MisoLee 2019. All-Right Reserved</p>
                     </div>
                 </div>
             </div>
@@ -414,8 +538,8 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <!-- GOOGLE MAP JS -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
-    <script src="assets/js/gmap3.min.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+    <script src="assets/js/gmap3.min.js"></script>
     <!-- WOW JS -->
     <script src="assets/js/wow.min.js"></script>
     <!-- SCRIPT JS -->
