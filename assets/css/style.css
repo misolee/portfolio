@@ -98,12 +98,11 @@ fieldset {
 }
 
 .section-padding {
-    padding: 120px 0px;
+    padding: 150px 0px;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .section-title h2 {
@@ -111,12 +110,13 @@ fieldset {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 40px;
-    margin-bottom: 0;
+    /* margin-bottom: 60px; */
 }
 
 .section-title p {
     font-weight: 300;
     font-size: 14px;
+    margin-bottom: 60px;
 }
 
 
@@ -743,6 +743,8 @@ ul.work li.active {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .work .item img {
@@ -802,6 +804,36 @@ ul.work li.active {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+.project-information {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 20px;
+    /* margin: 20px 0; */
+    flex: 1;
+}
+
+.project-description {
+    /* margin-bottom: 20px; */
+    flex: 2;
+}
+
+.project-languages {
+    /* margin-bottom: 20px; */
+    flex: 1;
+    color: rgb(238, 167, 167);
+}
+
+.project-sites {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 
@@ -917,11 +949,69 @@ ul.work li.active {
 * ----------------------------------------------------------------------------------------
 */
 
-.contact-me-area {}
+.contact-me-area {
+    background-color: #FAFAFA;
+    height: calc(100vh - 50px);
+    min-height: 745px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.contact-me-textarea textarea {
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    color: rgb(202, 202, 202);
+}
+
+.contact-me-textarea textarea:focus {
+    border: 1px solid rgb(46, 46, 46);
+    color: rgb(46, 46, 46);
+}
+
+.form-group {
+    padding: 0;
+    display: flex;
+    /* margin: 0 25px; */
+    /* margin: 25px 40px; */
+}
+
+.form-group input {
+    border-radius: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    color: rgb(202, 202, 202);
+}
+
+.form-group input:focus {
+    border: 1px solid rgb(46, 46, 46);
+    color: rgb(46, 46, 46);
+}
+
+.name-image {
+    display: flex;
+    /* margin: 0 25px; */
+}
+
+.contact-form-border {
+    width: 65%;
+}
 
 .contact-form {
     border-radius: 3px;
     margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
 }
 
 .form-control {
@@ -929,7 +1019,6 @@ ul.work li.active {
     border: 0px;
     width: 100%;
     height: 45px;
-    padding: 5px 0px;
     font-size: 16px;
     line-height: 1.42857143;
     color: #333;
@@ -937,8 +1026,6 @@ ul.work li.active {
     background-image: none;
     border-radius: 0px;
     box-shadow: none;
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
-    margin-bottom: 25px;
 }
 
 .form-control:focus {
@@ -1011,7 +1098,7 @@ ul.work li.active {
 
 
 .footer-area {
-    background: #FAFAFA;
+    background: white;
 }
 
 .single-contact-info {
@@ -1079,6 +1166,7 @@ ul.work li.active {
 .row {
     display: flex;
     justify-content: space-around;
+    margin: 0;
 }
 
 /*
@@ -1145,4 +1233,8 @@ ul.work li.active {
 .fa {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-angle-double-down {
+    box-shadow: none;
 }
