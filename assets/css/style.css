@@ -271,7 +271,7 @@ fieldset {
 }
 
 .header-text h2 {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(46, 46, 46);
     font-weight: 400;
     margin-bottom: 40px;
@@ -699,6 +699,16 @@ strong.text-rotator span {
 * ----------------------------------------------------------------------------------------
 */
 
+.projects-title {
+    padding-bottom: 45px;
+}
+
+.section-padding {
+    padding: 85px 0;
+    height: calc(100vh - 50px);
+    min-height: 745px;
+}
+
 .work {}
 
 .work-inner .mix {
@@ -809,7 +819,7 @@ ul.work li.active {
 .project-information {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 250px;
 }
 
 .project-title {
@@ -821,19 +831,43 @@ ul.work li.active {
 
 .project-description {
     /* margin-bottom: 20px; */
-    flex: 2;
+    flex: 1.5;
 }
 
 .project-languages {
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     flex: 1;
     color: rgb(238, 167, 167);
+    border-bottom: 1px dotted rgb(155, 155, 155);
+    padding-bottom: 10px;
 }
 
 .project-sites {
     display: flex;
     justify-content: center;
-    flex: 1;
+    flex: 0.8;
+}
+
+.project-sites button {
+    background-color: rgb(238, 167, 167);
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-sites button:focus {
+    outline: none;
+}
+
+.project-sites a {
+    color: white;
+}
+
+.project-sites a:hover {
+    color: rgb(46, 46, 46);
 }
 
 
@@ -892,8 +926,15 @@ ul.work li.active {
 * ----------------------------------------------------------------------------------------
 */
 
+.skills-title {
+    margin: 60px 0 40px 0;
+}
+
 .testimonial-area {
     background: #FAFAFA;
+    padding-top: 0;
+    height: calc(100vh - 50px);
+    min-height: 1020px;
 }
 
 .testimonial-area .section-title h2 {
@@ -949,16 +990,20 @@ ul.work li.active {
 * ----------------------------------------------------------------------------------------
 */
 
+.footer-contact {
+    display: flex;
+}
+
 .contact-me-area {
     background-color: #FAFAFA;
     height: calc(100vh - 50px);
-    min-height: 745px;
+    min-height: 750px;
 }
 
 .contact-me {
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding: 50px 25px;
 }
 
 .contact-me-textarea textarea {
@@ -993,20 +1038,40 @@ ul.work li.active {
 
 .name-image {
     display: flex;
-    /* margin: 0 25px; */
+    margin-bottom: 10px;
+}
+
+.contact-me-flex {
+    display: flex;
+    width: 350px;
+    margin-left: 70px;
+}
+
+.contact-name {
+    margin-right: 10px;
+}
+
+.contact-email {
+    margin-left: 10px;
 }
 
 .contact-form-border {
-    width: 65%;
+    width: 100%;
 }
 
 .contact-form {
+    flex: 1;
     border-radius: 3px;
-    margin-top: 30px;
+    margin-top: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     background-color: white;
+    height: 365px;
+}
+
+.contact-submit-button {
+    margin: 10px 0 5px 0;
 }
 
 .contact-button {
@@ -1098,16 +1163,37 @@ ul.work li.active {
 
 
 .footer-area {
-    background: white;
+    /* background: white; */
+    height: 500px;
+    min-height: 500px;
+    flex: 0.3;
+    padding-top: 50px;
+}
+
+.callme-emailme {
+    width: auto;
+}
+
+.contact-me-width {
+    width: 100%;
+    flex: 1;
+}
+
+.contact-me-call {
+    margin-right: 40px;
+}
+
+#contact-me-email {
+    /* padding-top: 15px; */
 }
 
 .single-contact-info {
     text-align: center;
-    background: #fff;
-    padding: 30px;
+    /* background: #fff; */
+    padding-top: 90px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .single-contact-info i {
@@ -1137,8 +1223,7 @@ ul.work li.active {
 }
 
 .footer-text {
-    margin-top: 70px;
-
+    /* margin-top: 70px; */
 }
 
 .footer-text p {
@@ -1237,4 +1322,8 @@ ul.work li.active {
 
 .fa-angle-double-down {
     box-shadow: none;
+}
+
+.footer-bottom {
+    margin-bottom: 20px;
 }
