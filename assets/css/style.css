@@ -1332,3 +1332,7 @@ ul.work li.active {
 .footer-bottom {
     margin-bottom: 20px;
 }
+
+.fab:hover {
+    color: rgb(241, 193, 193);
+}
